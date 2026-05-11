@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exvia Studio | Creative Design Agency</title>
+    <meta name="description" content="Exvia Studio is a creative design agency specializing in UI/UX design, brand identity, web development, and motion design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">Exvia</div>
+            <div class="loader-bar">
+                <div class="loader-progress" id="loaderProgress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Exvia</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Get in Touch</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <img src="images/hero-bg.jpg" alt="Creative Director" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-roles">
+                <span class="hero-role left">UI/UX Designer</span>
+                <span class="hero-role left">Brand Strategist</span>
+            </div>
+            <div class="hero-center">
+                <div class="hero-crosshair">
+                    <span class="crosshair-line horizontal"></span>
+                    <span class="crosshair-line vertical"></span>
+                </div>
+            </div>
+            <div class="hero-roles right">
+                <span class="hero-role">Creative Director</span>
+                <span class="hero-role">Web Developer</span>
+            </div>
+        </div>
+        <div class="hero-name">
+            <h1>EXVIA</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <p class="about-text">
+                        We are Exvia Studio, a collective of designers, developers, and strategists passionate about creating meaningful digital experiences. With over a decade of expertise, we blend creativity with technology to help brands stand out in the digital landscape. Our approach combines strategic thinking with meticulous craft, ensuring every project delivers both aesthetic excellence and measurable results.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">12+</span>
+                            <span class="stat-label">Years of<br>Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">250+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">180+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">35+</span>
+                            <span class="stat-label">Design Awards</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="about-image-grid">
+                        <img src="images/about-1.jpg" alt="Our creative studio workspace" class="about-img">
+                        <img src="images/about-2.jpg" alt="Team collaboration session" class="about-img">
+                        <img src="images/about-3.jpg" alt="Design process and brand work" class="about-img">
+                        <img src="images/about-4.jpg" alt="Awards and recognition" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">What We Do Best</h2>
+            </div>
+            <div class="services-list">
+                <div class="service-item" data-service="1">
+                    <div class="service-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">We create intuitive, user-centered interfaces that delight users and drive engagement. From wireframes to high-fidelity prototypes, we craft experiences that work.</p>
+                    </div>
+                    <span class="service-number">01</span>
+                    <div class="service-image">
+                        <img src="images/service-1.jpg" alt="UI/UX Design">
+                    </div>
+                </div>
+                <div class="service-item" data-service="2">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Brand Identity</h3>
+                        <p class="service-description">We build distinctive brand identities that tell your story. Logo design, visual systems, brand guidelines—we create cohesive brands that leave lasting impressions.</p>
+                    </div>
+                    <span class="service-number">02</span>
+                    <div class="service-image">
+                        <img src="images/service-2.jpg" alt="Brand Identity">
+                    </div>
+                </div>
+                <div class="service-item" data-service="3">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">We develop fast, responsive, and scalable websites using cutting-edge technologies. From landing pages to complex web applications, we bring designs to life.</p>
+                    </div>
+                    <span class="service-number">03</span>
+                    <div class="service-image">
+                        <img src="images/service-3.jpg" alt="Web Development">
+                    </div>
+                </div>
+                <div class="service-item" data-service="4">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Motion Design</h3>
+                        <p class="service-description">We add life to your brand through captivating animations and motion graphics. From micro-interactions to full video productions, we make your content move.</p>
+                    </div>
+                    <span class="service-number">04</span>
+                    <div class="service-image">
+                        <img src="images/service-4.jpg" alt="Motion Design">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-description">Explore our portfolio of award-winning work. Each project represents a unique challenge and a creative solution crafted with precision and passion.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item featured">
+                    <img src="images/portfolio-1.jpg" alt="Atelier Noir">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-year">2024</span>
+                        <h3 class="portfolio-title">Atelier Noir</h3>
+                        <p class="portfolio-category">E-Commerce Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-2.jpg" alt="FinFlow App">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-year">2024</span>
+                        <h3 class="portfolio-title">FinFlow App</h3>
+                        <p class="portfolio-category">Mobile UI/UX</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-3.jpg" alt="Aurora Creative">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-year">2023</span>
+                        <h3 class="portfolio-title">Aurora Creative</h3>
+                        <p class="portfolio-category">Brand Identity</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-4.jpg" alt="DataVision Pro">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-year">2023</span>
+                        <h3 class="portfolio-title">DataVision Pro</h3>
+                        <p class="portfolio-category">SaaS Dashboard</p>
+                    </div>
+                </div>
+                <div class="portfolio-cta">
+                    <span class="cta-label">Have a project in mind?</span>
+                    <h3 class="cta-title">Let's Create Something Amazing Together</h3>
+                   <a href="#contact" class="cta-link">Start a Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="portfolio-item wide">
+                    <img src="images/portfolio-5.jpg" alt="Ember & Ash">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-year">2023</span>
+                        <h3 class="portfolio-title">Ember & Ash</h3>
+                        <p class="portfolio-category">Web Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-footer">
+                <a href="#" class="btn-view-all">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Clients Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-image">
+                            <img src="images/testimonial-1.jpg" alt="Sarah Mitchell">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>"Exvia Studio transformed our digital presence completely. Their attention to detail and creative vision exceeded our expectations. The new website has significantly increased our conversion rates."</blockquote>
+                            <div class="testimonial-author">
+                                <strong>Sarah Mitchell</strong>
+                                <span>CEO, Lumina Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-image">
+                            <img src="images/testimonial-2.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>"Working with Exvia was an absolute pleasure. They understood our brand vision from day one and delivered a stunning identity that perfectly captures who we are. Highly recommended!"</blockquote>
+                            <div class="testimonial-author">
+                                <strong>Michael Chen</strong>
+                                <span>Founder, Vertex Labs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-image">
+                            <img src="images/testimonial-3.jpg" alt="Emma Rodriguez">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>"The team at Exvia brings both creativity and strategic thinking to every project. Our app redesign resulted in a 40% increase in user engagement. They're true partners in success."</blockquote>
+                            <div class="testimonial-author">
+                                <strong>Emma Rodriguez</strong>
+                                <span>Product Director, Nova Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev" id="testimonialPrev" aria-label="Previous testimonial">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <div class="testimonials-dots" id="testimonialsDots">
+                        <button class="dot active" data-index="0"></button>
+                        <button class="dot" data-index="1"></button>
+                        <button class="dot" data-index="2"></button>
+                    </div>
+                    <button class="testimonial-next" id="testimonialNext" aria-label="Next testimonial">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-background">
+            <img src="images/cta-bg.jpg" alt="">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-tags">
+                    <span class="cta-tag">UI/UX Designer</span>
+                    <span class="cta-tag">Brand Strategist</span>
+                    <span class="cta-tag">Creative Director</span>
+                </div>
+                <h2 class="cta-title">Ready to Start Your Next Project?</h2>
+                <p class="cta-description">We're always excited to collaborate with ambitious brands and innovative startups. Let's discuss how we can bring your vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:hello@exviastudio.com" class="btn-primary">Get in Touch <i class="fas fa-arrow-right"></i></a>
+                    <a href="mailto:hello@exviastudio.com" class="btn-link">
+                        <i class="fas fa-envelope"></i>
+                        hello@exviastudio.com
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">Exvia</a>
+                    <p class="footer-description">A creative design studio crafting digital experiences that inspire, engage, and deliver results. Let's build something extraordinary together.</p>
+                    <div class="footer-social">
+                    <a href="#" aria-label="Dribbble">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Brand Identity</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Motion Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Our Work</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Design System</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for design insights, industry trends, and studio updates.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Enter your email" aria-label="Email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Exvia Studio. All rights reserved.</p>
+                <p>Crafted with passion by Exvia Studio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
